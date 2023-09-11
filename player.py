@@ -15,3 +15,12 @@ class Player(Turtle):
 
     def up(self):
         self.forward(MOVE_DISTANCE)
+        # I'm not sure if this is the best place to check if the player has
+        # crossed the finish line. Both the scoreboard and car_manager will
+        # need to see this event.
+        if self.reached_finish_line:
+            self.goto(STARTING_POSITION)
+
+    @property
+    def reached_finish_line(self):
+        return self.ycor() >= FINISH_LINE_Y
