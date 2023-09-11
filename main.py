@@ -15,7 +15,7 @@ def initialize_screen():
 
 screen = initialize_screen()
 scoreboard = Scoreboard()
-player = Player()
+player = Player(scoreboard)
 screen.onkey(fun=player.up, key="Up")
 
 game_is_on = True

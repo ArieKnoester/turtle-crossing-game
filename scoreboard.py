@@ -9,10 +9,9 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.penup()
         self.goto(x=-280, y=255)
-        self.player_level = 1
-        self.display_level()
+        self.display_level(player_level=1)
 
-    def display_level(self):
+    def display_level(self, player_level):
         self.clear()
         self.write(
-            f"Level: {self.player_level}", font=FONT)
+            f"Level: {player_level}", font=FONT)
