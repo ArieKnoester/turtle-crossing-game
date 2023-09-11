@@ -19,10 +19,13 @@ class Player(Turtle):
     def up(self):
         self.forward(MOVE_DISTANCE)
         if self.reached_finish_line:
-            self.level += 1
-            self.scoreboard.display_level(player_level=self.level)
-            self.goto(STARTING_POSITION)
+            self.level_up()
 
     @property
     def reached_finish_line(self):
         return self.ycor() > FINISH_LINE_Y
+
+    def level_up(self):
+        self.level += 1
+        self.scoreboard.display_level(player_level=self.level)
+        self.goto(STARTING_POSITION)
