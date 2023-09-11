@@ -2,7 +2,6 @@ import time
 from turtle import Screen
 from player import Player
 from car_manager import CarManager
-from scoreboard import Scoreboard
 
 
 def initialize_screen():
@@ -14,8 +13,7 @@ def initialize_screen():
 
 
 screen = initialize_screen()
-scoreboard = Scoreboard()
-player = Player(scoreboard)
+player = Player()
 screen.onkey(fun=player.up, key="Up")
 
 game_is_on = True
