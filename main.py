@@ -4,12 +4,19 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
-screen = Screen()
-screen.setup(width=600, height=600)
-screen.tracer(0)
+
+def initialize_screen():
+    new_screen = Screen()
+    new_screen.setup(width=600, height=600)
+    new_screen.tracer(0)
+    new_screen.listen()
+    return new_screen
+
+
+screen = initialize_screen()
 scoreboard = Scoreboard()
 player = Player()
-screen.listen()
+
 screen.onkey(fun=player.up, key="Up")
 
 game_is_on = True
