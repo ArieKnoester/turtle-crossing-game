@@ -15,7 +15,7 @@ class Car(Turtle):
         self.hideturtle()
         self.penup()
         random_ycor = random.randrange(-280, 280)
-        self.goto(x=280, y=random_ycor)
+        self.goto(x=320, y=random_ycor)
         self.showturtle()
 
     @property
