@@ -30,4 +30,5 @@ class Player(Turtle):
     def level_up(self):
         self.level += 1
         self.scoreboard.display_level(player_level=self.level)
+        self.car_manager.increase_speed()
         self.goto(STARTING_POSITION)
