@@ -1,6 +1,6 @@
 from car import Car
-# STARTING_MOVE_DISTANCE = 5
-STARTING_MOVE_DISTANCE = 35
+STARTING_MOVE_DISTANCE = 5
+# STARTING_MOVE_DISTANCE = 35 # for testing
 MOVE_INCREMENT = 10
 
 
@@ -17,9 +17,8 @@ class CarManager:
     def move_cars(self):
         for index, car in enumerate(self.cars):
             car.forward(STARTING_MOVE_DISTANCE)
-            print(car)
-            if car.xcor() < -260:
+            if car.off_screen:
                 self.cars.pop(index)
-                # car stays on screen even after deleting it, so hide it first.
+                # car remains visible even after deleting it, so hide it first.
                 car.hideturtle()
                 del car

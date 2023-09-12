@@ -17,3 +17,7 @@ class Car(Turtle):
         random_ycor = random.randrange(-280, 280)
         self.goto(x=280, y=random_ycor)
         self.showturtle()
+
+    @property
+    def off_screen(self):
+        return self.xcor() < -320
