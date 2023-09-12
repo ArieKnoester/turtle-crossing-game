@@ -14,12 +14,11 @@ def initialize_screen():
 
 screen = initialize_screen()
 player = Player()
-car_manager = CarManager()
 screen.onkey(fun=player.up, key="Up")
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    car_manager.create_car_randomly()
-    car_manager.move_cars()
+    player.car_manager.create_car_randomly()
+    player.car_manager.move_cars()

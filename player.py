@@ -1,5 +1,6 @@
 from turtle import Turtle
 from scoreboard import Scoreboard
+from car_manager import CarManager
 STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
@@ -15,6 +16,7 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
         self.level = 1
         self.scoreboard = Scoreboard()
+        self.car_manager = CarManager()
 
     def up(self):
         self.forward(MOVE_DISTANCE)
