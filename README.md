@@ -1,5 +1,4 @@
 # turtle-crossing-game
-
 Work in progress. This program is for a Python course. The course
 prompts the student to choose a difficulty level as defined below.
 
@@ -10,8 +9,8 @@ prompts the student to choose a difficulty level as defined below.
 Starting code was provided by the course (See 'Initial commit'). 
 I chose 'Expert' difficulty. Step 1 contains the requirements for 
 the game and a few gifs showing examples of the requirements. 
-These requirements are as follows:
 
+### Game requirements:
 1. A turtle moves forwards when you press the "Up" key. 
 It can only move forwards, not back, left or right.
 2. Cars are randomly generated along the y-axis and will move 
@@ -21,3 +20,8 @@ back to the original position and the player levels up. On the
 next level, the car speed increases.
 4. When the turtle collides with a car, it's game over and 
 everything stops.
+
+#### TODO
+- Detect if the turtle collides with any car.
+- If the turtle collides with any car. The game is over.
+- When the game is over, Display 'GAME OVER' text.
