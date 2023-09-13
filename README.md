@@ -22,6 +22,9 @@ next level, the car speed increases.
 everything stops.
 
 #### TODO
-- Detect if the turtle collides with any car.
-- If the turtle collides with any car. The game is over.
+- ~~Detect if the turtle collides with any car.~~
+- ~~If the turtle collides with any car. The game is over.~~
 - When the game is over, Display 'GAME OVER' text.
+- (Maybe) Tweak the logic that determines whether a car is 
+spawned or use a different algorithm.
+- (Maybe) Tweak the speed increase when a player levels up.
