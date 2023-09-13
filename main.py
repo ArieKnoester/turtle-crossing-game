@@ -27,4 +27,5 @@ while player.car_manager.move_cars():
 # the player sees the collision. Update the screen again
 # after exiting the loop, so the collision is visible.
 screen.update()
+player.scoreboard.game_over()
 screen.exitonclick()

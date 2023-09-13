@@ -1,5 +1,5 @@
 # turtle-crossing-game
-Work in progress. This program is for a Python course. The course
+This program was created as part of a Python course. The course
 prompts the student to choose a difficulty level as defined below.
 
 - Difficulty Normal 😎: Use all Steps to complete the project.
@@ -21,10 +21,3 @@ next level, the car speed increases.
 4. When the turtle collides with a car, it's game over and 
 everything stops.
 
-#### TODO
-- ~~Detect if the turtle collides with any car.~~
-- ~~If the turtle collides with any car. The game is over.~~
-- When the game is over, Display 'GAME OVER' text.
-- (Maybe) Tweak the logic that determines whether a car is 
-spawned or use a different algorithm.
-- (Maybe) Tweak the speed increase when a player levels up.
